@@ -5,41 +5,7 @@
 
 ## Project details
 
-This submission contains the following documents 
-1) Drop Script for Tables
-- Includes drop scripts for all database objects
+Why is Banking and Financial Service Management?
 
-2) Creation Of Tables for Database
-- Includes create scripts for 16 Tables
-
-3) Insertion of data in Tables
-- Includes Insert scripts
-
-4) Column Computation & Table level Constraint Check
-a) Column Based Computation 
-- Calculate credit status based on customers credit score
-b) Table level check constraint based on a function:
-- To not allow a person with the same name and ssn to register again
-
-5) Procedure & Triggers for Transactions
-- Includes trigger for updating account balance and procedure for handling all loan, insurance, card, and account transactions
-
-6) Encryption:
-- Encryption and Decryption of Person Information
-
-7) Views
-- To show the number of Services in each Bank Branch
-- To categorize customers Account holders into Minor, Senior and Adult
-
-8) Final ERD
-- Includes the final normalized ERD
-
-9) Bank Management Dashboard
-- Includes reports generated from Tableau
-
-10) Banking & Financial Service Management.ppt
-- Slide deck containing project highlights and problem addressed
-
-11) Database Design and Initial ERD
-- Includes business problem addresssed, business rules, ERD, and detailed descirption on purpose of a particular entity
-
+- Before the database was built, employees in the bank had to manually write and store the banking records inside the files. This procedure is highly redundant, arduous and inefficient, especially while retrieving the important information. Therefore, a strong, robust database management system must be made to address this issue.
+- The main goal of our system is to design a database model such that it’ll help the organization with information of various services opted by the customers from a particular bank branch and help the bank employees to have a smooth experience for providing additional services
