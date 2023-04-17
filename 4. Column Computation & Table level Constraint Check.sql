@@ -68,7 +68,7 @@ CREATE FUNCTION isPersonRegistered(@firstName VARCHAR(20), @lastName VARCHAR(20)
 RETURNS SMALLINT
 AS
 BEGIN
-   DECLARE @COUNT SMALLINT=0;
+   DECLARE @COUNT INT;
 
    SELECT @COUNT = COUNT(PersonID) FROM Person
    WHERE FirstName = @firstName AND LastName = @lastName AND SSN = @SSN;
@@ -79,7 +79,7 @@ END
 GO
 
 --Added a constraint
-ALTER TABLE Person WITH NOCHECK ADD CONSTRAINT checkRegisteredPerson
+ALTER TABLE Person ADD CONSTRAINT checkRegisteredPerson
 CHECK (dbo.isPersonRegistered(FirstName, LastName, SSN) = 0);
 GO
 
