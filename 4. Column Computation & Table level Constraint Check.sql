@@ -73,7 +73,7 @@ BEGIN
    SELECT @COUNT = COUNT(PersonID) FROM Person
    WHERE FirstName = @firstName AND LastName = @lastName AND SSN = @SSN;
 
-   RETURN @COUNT;
+   RETURN CASE WHEN @COUNT > 1 THEN 1 ELSE 0 END;
 
 END
 GO
